@@ -14,7 +14,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 This data is obtained by processing the original data to make it a tidy dataset.
 
-For each record it is provided:
+The original data has for each record:
 ======================================
 - An identifier of the subject who carried out the experiment.
 - Its activity label. 
@@ -22,20 +22,22 @@ For each record it is provided:
 - Triaxial Angular velocity from the gyroscope. 
 - A 561-feature vector with time and frequency domain variables. 
 
-The dataset includes the following files:
+
+The modified dataset includes the following files:
 =========================================
 
 - 'README.txt'
 
-- 'dataset.csv': the dataset file
+- 'dataset.txt': the dataset file
 
-- 'Codebook.pdf': the complete details of the dataset
+- 'Codebook.pdf': the complete details of the features of modified dataset
 
-- 'feature_names.txt': names of features used
+- 'features_names.txt': Descriptive names of the variables
+
 How to read data in R:
 =======================================
 To read this file in R use bellow:
->mydata=read.table("dataset.csv")
+>mydata=read.table("dataset.txt",header = TRUE)
 
 
 Notes: 
@@ -44,8 +46,8 @@ Notes:
 - Each feature vector is a row on the text file.
 
 
-Process of cleaning the original dataset:
-=================================================
+Process of cleaning the original dataset to obtain the modified dataset:
+============================================================================
 The original dataset is cleaned and processed using script "run_analysis.R"
 The script should be placed inside original dataset folder.
 The script performs following operations in sequence.
@@ -69,6 +71,6 @@ Euclidean Norm: Magnitude of Euclidean Norm of the signal
 
 Example feature name:   Freq. Domain Body Gyroscope mean X
 
-5) Finally, find out mean value of each variable for each subject and each activity using aggregate function. Store this dataset in a file "dataset.csv"
+5) Finally, find out mean value of each variable for each subject and each activity using aggregate function. Store this dataset in a file "dataset.txt"
 To read this file in R use bellow:
->mydata=read.table("dataset.csv")
+>mydata=read.table("dataset.txt",header = TRUE)
