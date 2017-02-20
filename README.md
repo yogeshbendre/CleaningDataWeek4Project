@@ -1,10 +1,10 @@
 ==================================================================
 Modified Human Activity Recognition Using Smartphones Dataset
-Version 1.0
 ==================================================================
+
+Version 1.0
 Yogesh B
 Student - Coursera Data Science Specialization
-==================================================================
 
 This data is obtained from the original data of Smartlab - Non Linear Complex Systems Laboratory, DITEN - Università degli Studi di Genova.
 
